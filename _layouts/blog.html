@@ -1,0 +1,9 @@
+{% include head.html %}
+
+<hr>
+
+{% for entry in site.data.blog.entries %}
+{{ entry.content | markdownify }}
+<b>Published on:</b> {{ entry.date }}
+<hr>
+{% endfor %}
