@@ -2,7 +2,7 @@
 
 <hr>
 
-{% for entry in site.data.blog.entries %}
+{% for entry in site.data.blog.entries reversed %}
 {{ entry.content | markdownify }}
 <b>Published on:</b> {{ entry.date }}
 <hr>
